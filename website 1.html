@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>វិទ្យាល័យ​សម្តេច ឪ​សម្តេច​ម៉ែ​ </title> 
+  <link rel="stylesheet" href="style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}</style></head> 
+ <body> 
+  <header> 
+   <h3>វិទ្យាល័យ​សម្តេច ឪ​សម្តេច​ម៉ែ </h3> 
+   <nav> 
+    <ul> 
+     <li><a href="#about">អំពី​ពួក​យើង</a></li> 
+     <li><a href="#programs">កម្មវិធី</a></li> 
+     <li><a href="#contact">ទំនាក់ទំនងមកយើង </a></li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <main> 
+   <section id="about"> 
+    <h2>About My School</h2> 
+    <p>My School is a vibrant and welcoming learning environment that nurtures the academic and personal growth of its students. We are committed to providing a challenging and supportive curriculum that prepares students for success in college and beyond.</p> 
+   </section> 
+   <section id="programs"> 
+    <h2>Our Programs</h2> 
+    <ul> 
+     <li>Early Childhood Education</li> 
+     <li>Elementary Education</li> 
+     <li>Middle School Education</li> 
+     <li>High School Education</li> 
+    </ul> 
+   </section> 
+   <section id="contact"> 
+    <h2>Contact Us</h2> 
+    <p>We would love to hear from you!</p> 
+    <form id="contact-form"> <label for="name">Name:</label> 
+     <input type="text" id="name" name="name" required> <label for="email">Email:</label> 
+     <input type="email" id="email" name="email" required> <label for="message">Message:</label> <textarea id="message" name="message" rows="5" required></textarea> <button type="submit">Submit</button> 
+    </form> 
+   </section> 
+  </main> 
+  <footer> 
+   <p>© 2023 My School</p> 
+  </footer> 
+  <script src="script.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    alert('Thank you for contacting us, ' + name + '!');
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+});</script></body></html>
